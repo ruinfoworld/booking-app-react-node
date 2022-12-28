@@ -5,6 +5,7 @@ import authRoute from "./routes/auth.js";
 import userRoute from "./routes/users.js";
 import hotelRoute from "./routes/hotels.js";
 import roomRoute from "./routes/rooms.js";
+import cookieParser from "cookie-parser";
 dotenv.config();
 
 const app = express();
@@ -27,6 +28,7 @@ const connection = async () => {
 //     console.log("mongoDB connected!!!");
 // });
 app.use(express.json());
+app.use(cookieParser());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/hotels", hotelRoute);
