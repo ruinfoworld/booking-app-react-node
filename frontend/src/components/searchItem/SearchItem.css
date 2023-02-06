@@ -1,0 +1,14 @@
+.searchItem{
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.siImg{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}

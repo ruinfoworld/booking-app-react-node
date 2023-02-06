@@ -5,6 +5,7 @@ import "./Hotels.css";
 import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
+import SearchItem from "../../components/searchItem/SearchItem";
 
 const Hotels = () => {
   const location = useLocation();
@@ -37,9 +38,42 @@ const Hotels = () => {
                 ranges={date}
               />}
             </div>
+            <div className="lsItem">
+                <label>Options</label>
+                <div className="lsItemOption">
+                    <label>Min Price (per night)</label>
+                    <input className="optionInput" type="text" />
+                </div>
+                <div className="lsItemOption">
+                    <label>Max Price (per night)</label>
+                    <input className="optionInput" type="text"/>
+                </div>
+                <div className="lsItemOption">
+                    <label>Adult</label>
+                    <input className="optionInput" type="text" placeholder={options.adult}/>
+                </div>
+                <div className="lsItemOption">
+                    <label>Children</label>
+                    <input className="optionInput" type="text" placeholder={options.childrens}/>
+                </div>
+                <div className="lsItemOption">
+                    <label>Room</label>
+                    <input className="optionInput" type="text" placeholder={options.room}/>
+                </div>
+            </div>
+            <button>Search</button>
           </div>
           <div className="listResult">
-            <h1 className="lsResult">Result</h1>
+            <SearchItem/>
+            <SearchItem/>
+            <SearchItem/>
+            <SearchItem/>
+            <SearchItem/>
+            <SearchItem/>
+            <SearchItem/>
+            <SearchItem/>
+            <SearchItem/>
+            <SearchItem/>
           </div>
         </div>
       </div>

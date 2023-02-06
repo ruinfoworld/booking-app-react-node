@@ -47,3 +47,25 @@
     align-items: center;
     cursor: pointer;
 }
+.lsItemOption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+}
+.lsItemOption>label{
+    font-size: 12px;
+}
+.lsItemOption>input{
+    width: 50px;
+    border: none;
+}
+.listSearch>button{
+    padding: 10px;
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+}
